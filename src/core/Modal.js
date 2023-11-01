@@ -1,11 +1,13 @@
-import { useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 export default function Modal({ children, className, onClose }) {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const dialogRef = useRef(null)
   
   const openModal = () => {
-    if (dialogRef.current) {
-      dialogRef.current.showModal();
+    if (!isModalOpen) {
+      dialogRef.current.showModal()
+      setIsModalOpen(true)
     }
   }
   
@@ -13,12 +15,13 @@ export default function Modal({ children, className, onClose }) {
     if (event.target.id === 'dialog') {
       onClose()
       dialogRef.current.close()
+      setIsModalOpen(false)
     }
   }
   
   useEffect(() => {
     openModal()
-  })
+  }, [])
   
   useEffect(() => {
     document.addEventListener('mousedown', handleClose)
