@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import styles from './styles.module.css'
 
 export default function Modal({ children, className, onClose }) {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -31,7 +32,7 @@ export default function Modal({ children, className, onClose }) {
   }, [])
   
   return (
-    <dialog className={`modal ${className}`} ref={dialogRef}>
+    <dialog className={`${styles.modal} ${className}`} ref={dialogRef}>
       {children}
     </dialog>
   )
