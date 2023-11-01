@@ -1,1 +1,2 @@
-# components
+# Components  
+Some reusable components.
