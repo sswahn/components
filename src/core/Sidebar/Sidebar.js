@@ -2,16 +2,18 @@ import { useContext, lazy } from 'react'
 import { Context } from '../../Provider'
 import styles from 'styles.module.css'
 
-const SideBar = ({ children }) => {
+const SideBar = ({ children, className }) => {
   const [context, dispatch] = useContext(Context)
   
   const handleSidebar = event => {
     dispatch({ type: 'sidebar', payload: false })
   }
+
+  // add event listeners for handling close sidebar
   
   return (
     <>
-      <nav id="sidebar" className={`${styles.sidebar} ${context.sidebar ? 'sidebar-open : 'sidebar-closed'}`}>
+      <nav id="sidebar" className={`${styles.sidebar} ${className} ${context.sidebar ? styles['sidebar-open'] : styles['sidebar-closed']}`}>
         {/* make off click close functionality */}
         {children}
       </nav>
