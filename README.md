@@ -47,5 +47,7 @@ The Sidebar component helps you create flexible sidebars with an open and close 
 <Sidebar>
   {/* Sidebar content */}
 </Sidebar>
-```
+```  
 
+## License
+Components is [MIT Licensed](https://github.com/sswahn/components/blob/main/LICENSE)
