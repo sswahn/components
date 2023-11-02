@@ -21,6 +21,7 @@ import { Avatar, Checkbox, Dropdown, Modal, Search, Sidebar } from '@sswahn/comp
 The Avatar component displays user avatars or profile images. Easily create an avatar element with support for custom user images and badges.
 ```javascript
 <Avatar
+  className="yourClass"            // Your class for custom styles (optional)
   image="/path/to/user-avatar.jpg" // Path to the user's avatar image
   username="JohnDoe"               // User's username or name
   onClick={handleClick}            // Optional click event handler
@@ -31,19 +32,19 @@ The Avatar component displays user avatars or profile images. Easily create an a
 ### Checkbox
 The Checkbox component allows you to create customizable checkboxes with labels.  
 ```javascript
-<Checkbox label="Check me" checked={isChecked} onChange={handleCheckboxChange} />
+<Checkbox className="yourClass" label="Check me" checked={isChecked} onChange={handleCheckboxChange} />
 ```  
 
 ### Dropdown
 The Dropdown component provides a simple way to create dropdown menus with various options.  
 ```javascript
-<Dropdown text="Select an option" options={dropdownOptions} />
+<Dropdown className="yourClass" text="Select an option" options={dropdownOptions} />
 ```  
 
 ### Modal
 The Modal component allows you to create modal dialogs that can be opened and closed programmatically.  
 ```javascript
-<Modal onClose={handleModalClose}>
+<Modal className="yourClass" onClose={handleModalClose}>
   {/* Content for the modal */}
 </Modal>
 ```  
@@ -51,13 +52,13 @@ The Modal component allows you to create modal dialogs that can be opened and cl
 ### Search
 The Search component provides an input field for searching, and it allows you to capture search input changes.  
 ```javascript
-<Search onChange={handleSearch} placeholder="Search..." />
+<Search className="yourClass" onChange={handleSearch} placeholder="Search..." />
 ```  
 
 ### Sidebar
 The Sidebar component helps you create flexible sidebars with an open and close functionality.  
 ```javascript
-<Sidebar>
+<Sidebar className="yourClass">
   {/* Sidebar content */}
 </Sidebar>
 ```  
