@@ -14,9 +14,9 @@ const Modal = ({ children, className, onClose }) => {
   
   const closeModal = event => {
     if (event.target.tagName === 'DIALOG') {
-      onClose()
-      dialogRef.current.close()
       setIsModalOpen(false)
+      dialogRef.current.close()
+      onClose()
     }
   }
   
