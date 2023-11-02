@@ -10,12 +10,12 @@
   width: 100%;
 }
 
-.sidebar-closed {
-  right: -500px;
+.open {
+  right: 0;
   transform: translateX(0);
 }
 
-.sidebar-open {
-  right: 0;
+.closed {
+  right: -500px;
   transform: translateX(0);
 }
