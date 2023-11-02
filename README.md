@@ -6,7 +6,7 @@ A collection of reusable React components.
 To use these components in your React project, you can install this library via npm.
 
 ```bash
-npm install your-library-name
+npm install @sswahn/components
 ```
 
 ## Usage
