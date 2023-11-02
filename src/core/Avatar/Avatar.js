@@ -3,9 +3,9 @@ import UserIcon from './UserIcon'
 import BadgeIcon from './BadgeIcon'
 import styles from './styles.module.css'
 
-const Avatar = ({ image, username, onClick, badge }) => {
+const Avatar = ({ className, image, username, onClick, badge }) => {
   return (
-    <div className={styles.avatar} onClick={onClick} aria-label={`${username}'s avatar`}>
+    <div className={`${styles.avatar} ${className}`} onClick={onClick} aria-label={`${username}'s avatar`}>
       {image 
         ? <img src={image} alt={`${username}'s avatar`} />
         : <UserIcon />
