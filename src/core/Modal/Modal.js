@@ -12,7 +12,7 @@ const Modal = ({ children, className, onClose }) => {
     }
   }
   
-  const handleClose = event => {
+  const closeModal = event => {
     if (event.target.tagName === 'DIALOG') {
       onClose()
       dialogRef.current.close()
@@ -25,9 +25,9 @@ const Modal = ({ children, className, onClose }) => {
   }, [])
   
   useEffect(() => {
-    document.addEventListener('mousedown', handleClose)
+    document.addEventListener('mousedown', closeModal)
     return () => {
-      document.removeEventListener('mousedown', handleClose)
+      document.removeEventListener('mousedown', closeModal)
     }
   }, [])
   
