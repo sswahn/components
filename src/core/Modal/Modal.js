@@ -2,19 +2,19 @@ import { useState, useEffect, useRef } from 'react'
 import styles from './styles.module.css'
 
 const Modal = ({ children, className, onClose }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
   const dialogRef = useRef(null)
   
   const openModal = () => {
-    if (!isModalOpen) {
+    if (!isOpen) {
       dialogRef.current.showModal()
-      setIsModalOpen(true)
+      setIsOpen(true)
     }
   }
   
   const closeModal = event => {
     if (event.target.tagName === 'DIALOG') {
-      setIsModalOpen(false)
+      setIsOpen(false)
       dialogRef.current.close()
       onClose()
     }
