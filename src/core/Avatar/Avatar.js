@@ -5,13 +5,13 @@ import styles from './styles.module.css'
 
 const Avatar = ({ image, username, onClick, badge }) => {
   return (
-    <a className={styles.avatar} href={`/profile/${username.toLowerCase()}`} onClick={onClick} aria-label={`${username}'s' profile`}>
+    <div className={styles.avatar} onClick={onClick} aria-label={`${username}'s avatar`}>
       {image 
-        ? <img src={image} alt={`${username}'s' avatar`} />
+        ? <img src={image} alt={`${username}'s avatar`} />
         : <UserIcon />
       }
-      {badge &&  }
-    </a>
+      {badge && <BadgeIcon />}
+    </div>
   )
 }
 
