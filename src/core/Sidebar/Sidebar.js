@@ -1,19 +1,34 @@
-import { useContext, lazy } from 'react'
+import { useState, useEffect } from 'react'
 import { Context } from '../../Provider'
 import styles from 'styles.module.css'
 
 const SideBar = ({ children, className }) => {
-  const [context, dispatch] = useContext(Context)
+ const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   
-  const handleSidebar = event => {
-    dispatch({ type: 'sidebar', payload: false })
+  const openSidebar = () => {
+    if (isSidebarOpen) {
+      setIsSidebarOpen(true)
+    }
   }
 
-  // add event listeners for handling close sidebar
+  const closeSidebar = () => { // fires on off click (needs event handler)
+    setIsSidebarOpen(false)
+  }
+
+  useEffect(() => {
+    openSidebar()
+  })
+
+  useEffect(() => {
+    // event handlers for closing
+    return () => {
+      
+    }
+  })
   
   return (
     <>
-      <nav id="sidebar" className={`${styles.sidebar} ${className} ${context.sidebar ? styles['sidebar-open'] : styles['sidebar-closed']}`}>
+      <nav className={`${styles.sidebar} ${className} ${isSidebarOpen ? styles.open : styles.closed}`}>
         {/* make off click close functionality */}
         {children}
       </nav>
