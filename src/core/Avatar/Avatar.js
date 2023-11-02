@@ -1,8 +1,6 @@
-import { useContext } from 'react'
-import { Context } from '../../Provider'
-import { url } from '../../config'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleUser } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react'
+
+import UserIcon from './UserIcon'
 
 export default function Avatar({ src, username }) {
   const [context, dispatch] = useContext(Context)
