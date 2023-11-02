@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import styles from './styles.module.css'
 
-const Search = () => {
+const Search = ({ className }) => {
 
   return (
-    <input className={styles.search} type="text" //>
+    <input className={`${styles.search} ${className}`} type="text" //>
   )
 }
 
