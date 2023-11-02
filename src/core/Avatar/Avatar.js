@@ -10,7 +10,11 @@ const Avatar = ({ image, username, onClick, badge }) => {
         ? <img src={image} alt={`${username}'s avatar`} />
         : <UserIcon />
       }
-      {badge && <BadgeIcon />}
+      {badge && (
+        <div className={styles.badge}>
+          <BadgeIcon />
+        </div>
+      )}
     </div>
   )
 }
