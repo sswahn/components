@@ -14,7 +14,7 @@ npm install @sswahn/components
 ## Usage
 Import the components.
 ```javascript
-import { Checkbox, Dropdown, Modal, Search, Sidebar } from '@sswahn/components'
+import { Avatar, Checkbox, Dropdown, Modal, Search, Sidebar } from '@sswahn/components'
 ```  
 
 ### Avatar
