@@ -18,7 +18,7 @@ import { Avatar, Checkbox, Dropdown, Modal, Search, Sidebar } from '@sswahn/comp
 ```  
 
 ### Avatar
-The Avatar component displays user avatars or profile images. It allows you to easily create an avatar element with support for custom user images and badges.
+The Avatar component displays user avatars or profile images. Easily create an avatar element with support for custom user images and badges.
 ```javascript
 <Avatar
   image="/path/to/user-avatar.jpg" // Path to the user's avatar image
