@@ -6,25 +6,21 @@ const SideBar = ({ children, className }) => {
  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   
   const openSidebar = () => {
-    if (isSidebarOpen) {
+    if (!isSidebarOpen) {
       setIsSidebarOpen(true)
     }
   }
 
-  const closeSidebar = () => { // fires on off click (needs event handler)
+  const closeSidebar = () => {
     setIsSidebarOpen(false)
   }
 
   useEffect(() => {
     openSidebar()
-  })
-
-  useEffect(() => {
-    // event handlers for closing
     return () => {
-      
+      closeSidebar()
     }
-  })
+  }, [])
   
   return (
     <>
@@ -32,7 +28,7 @@ const SideBar = ({ children, className }) => {
         {/* make off click close functionality */}
         {children}
       </nav>
-      {/* isSidebarOpen && <div className="overlay" onClick={toggleSidebar} /> */} {/* Overlay for closing sidebar */}
+      {/* isSidebarOpen && <div className="overlay" onClick={closeSidebar} /> */} {/* Overlay for closing sidebar */}
     </>
   )
 }
