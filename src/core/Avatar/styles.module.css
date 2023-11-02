@@ -1,0 +1,12 @@
+
+.avatar {
+  font-size: 35px;
+  padding-right: 5px;
+  position: relative;
+}
+
+.badge svg {
+  bottom: 3px;
+  position: absolute;
+  right: 0px;
+}
