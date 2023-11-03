@@ -16,11 +16,11 @@ const LikeButton = ({ className, initialCount, onChange }) => {
   const debouncedOnChange = debounce(onChange, 500)
 
   const handleClick = () => {
-    const newState = !liked
-    const newCount = newState ? count + 1 : count - 1
-    setLiked(newState)
+    const isLiked = !liked
+    const newCount = isLiked ? count + 1 : count - 1
+    setLiked(isLiked)
     setCount(newCount)
-    debouncedOnChange({ liked: newState, count: newCount })
+    debouncedOnChange({ liked: isLiked, count: newCount })
   }
 
   useEffect(() => {
