@@ -1,3 +1,4 @@
+export { default as Avatar } from './Avatar/Avatar'
 export { default as Checkbox } from './Checkbox/Checkbox'
 export { default as Dropdown } from './Dropdown/Dropdown'
 export { default as Modal } from './Modal/Modal'
