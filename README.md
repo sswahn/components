@@ -40,7 +40,12 @@ The Avatar component displays user avatars or profile images. Easily create an a
 ### Checkbox
 The Checkbox component allows you to create customizable checkboxes with labels.  
 ```javascript
-<Checkbox className="custom-checkbox" label="Check me" checked={isChecked} onChange={handleCheckboxChange} />
+<Checkbox
+  className="custom-checkbox"
+  label="Check me"
+  checked={isChecked}
+  onChange={handleCheckboxChange}
+/>
 ```  
 
 ### Dropdown
