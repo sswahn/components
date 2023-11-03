@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export const debounce = (fn, delay) => {
+const debounce = (fn, delay) => {
   let timeoutId
   return (...args) => {
     clearTimeout(timeoutId)
@@ -10,7 +10,7 @@ export const debounce = (fn, delay) => {
   }
 }
 
-function LikeButton({ count, onChange }) {
+const LikeButton = ({ count, onChange }) => {
   const [liked, setLiked] = useState(false)
   const debouncedLikeChange = debounce(onChange, 500)
 
