@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const debounce = (fn, delay) => {
   let timeoutId
@@ -10,21 +10,27 @@ const debounce = (fn, delay) => {
   }
 }
 
-const LikeButton = ({ count, onChange }) => {
+const LikeButton = ({ className, initialCount, onChange }) => {
   const [liked, setLiked] = useState(false)
-  const debouncedLikeChange = debounce(onChange, 500)
+  const [count, setCount] = useState(0)
+  const debouncedOnChange = debounce(onChange, 500)
 
-  const handleLikeClick = () => {
-    setLiked(!liked)
-    debouncedLikeChange(liked ? -1 : 1)
+  const handleClick = () => {
+    const newState = !liked
+    const newCount = newState ? count + 1 : count - 1
+    setLiked(newState)
+    setCount(newCount)
+    debouncedOnChange({ liked: newState, count: newCount })
   }
 
+  useEffect(() => {
+    setCount(initialCount)
+  }, [initialCount])
+
   return (
-    <div>
-      <button onClick={handleLikeClick}>
-        {liked ? 'Unlike' : 'Like'} {count} {/* change text to icons */}
-      </button>
-    </div>
+    <button className={`${styles.like} ${className}`} onClick={handleClick}>
+      {liked ? 'Unlike' : 'Like'} {count} {/* change text to icons */}
+    </button>
   )
 }
 
