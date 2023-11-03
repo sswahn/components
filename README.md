@@ -29,7 +29,7 @@ import {
 The Avatar component displays user avatars or profile images. Easily create an avatar element with support for custom user images and badges.
 ```javascript
 <Avatar
-  className="yourClass"            // Your class for custom styles (optional)
+  className="custom-avatar"        // Your class for custom styles (optional)
   image="/path/to/user-avatar.jpg" // Path to the user's avatar image
   username="JohnDoe"               // User's username or name
   onClick={handleClick}            // Optional click event handler
@@ -40,7 +40,7 @@ The Avatar component displays user avatars or profile images. Easily create an a
 ### Checkbox
 The Checkbox component allows you to create customizable checkboxes with labels.  
 ```javascript
-<Checkbox className="yourClass" label="Check me" checked={isChecked} onChange={handleCheckboxChange} />
+<Checkbox className="custom-checkbox" label="Check me" checked={isChecked} onChange={handleCheckboxChange} />
 ```  
 
 ### Dropdown
@@ -62,7 +62,7 @@ The LikeButton component creates customizable Like buttons with icons and toolti
 ### Modal
 The Modal component allows you to create modal dialogs that can be opened and closed programmatically.  
 ```javascript
-<Modal className="yourClass" onClose={handleModalClose}>
+<Modal className="custom-modal" onClose={handleModalClose}>
   {/* Content for the modal */}
 </Modal>
 ```  
@@ -70,13 +70,13 @@ The Modal component allows you to create modal dialogs that can be opened and cl
 ### Search
 The Search component provides an input field for searching, and it allows you to capture search input changes.  
 ```javascript
-<Search className="yourClass" onChange={handleSearch} placeholder="Search..." />
+<Search className="custom-search" onChange={handleSearch} placeholder="Search..." />
 ```  
 
 ### Sidebar
 The Sidebar component helps you create flexible sidebars with an open and close functionality.  
 ```javascript
-<Sidebar className="yourClass">
+<Sidebar className="custom-sidebar">
   {/* Sidebar content */}
 </Sidebar>
 ```  
