@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import styles from './styles.module.css'
 
 const debounce = (fn, delay) => {
   let timeoutId
