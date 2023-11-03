@@ -41,6 +41,16 @@ The Dropdown component provides a simple way to create dropdown menus with vario
 <Dropdown className="yourClass" text="Select an option" options={dropdownOptions} />
 ```  
 
+### LikeButton
+The LikeButton component creates customizable Like buttons with icons and tooltips.
+```javascript
+<LikeButton
+  className="custom-like-button"
+  initialCount={10}
+  onChange={handleLikeChange}
+/>
+```  
+
 ### Modal
 The Modal component allows you to create modal dialogs that can be opened and closed programmatically.  
 ```javascript
