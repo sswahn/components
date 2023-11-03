@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import LikeIcon from './LikeIcon'
+import UnlikeIcon from './UnlikeIcon'
 import styles from './styles.module.css'
 
 const debounce = (fn, delay) => {
@@ -30,7 +32,7 @@ const LikeButton = ({ className, initialCount, onChange }) => {
 
   return (
     <button className={`${styles.like} ${className}`} onClick={handleClick}>
-      {liked ? 'Unlike' : 'Like'} {count} {/* change text to icons */}
+      {liked ? <UnlikeIcon /> : <LikeIcon />} {count} {/* consider tooltip */}
     </button>
   )
 }
