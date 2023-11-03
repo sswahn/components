@@ -1,22 +1,28 @@
 import React, { useState } from 'react'
 
-function LikeButton() {
+export const debounce = (fn, delay) => {
+  let timeoutId
+  return (...args) => {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => {
+      fn(...args)
+    }, delay)
+  }
+}
+
+function LikeButton({ count, onChange }) {
   const [liked, setLiked] = useState(false)
-  const [count, setCount] = useState(0)
+  const debouncedLikeChange = debounce(onChange, 500)
 
   const handleLikeClick = () => {
-    if (!liked) {
-      setCount(count + 1)
-    } else {
-      setCount(count - 1)
-    }
     setLiked(!liked)
+    debouncedLikeChange(liked ? -1 : 1)
   }
 
   return (
     <div>
       <button onClick={handleLikeClick}>
-        {liked ? 'Unlike' : 'Like'} ({count})
+        {liked ? 'Unlike' : 'Like'} {count} {/* change text to icons */}
       </button>
     </div>
   )
