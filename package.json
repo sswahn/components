@@ -13,14 +13,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sswahn/components"
-  },
-  "devDependencies": {
-    "webpack": "^5.89.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.23.2",
-    "@babel/preset-env": "^7.23.2",
-    "@babel/preset-react": "^7.22.15",
-    "babel-loader": "^9.1.3"
   }
 }
