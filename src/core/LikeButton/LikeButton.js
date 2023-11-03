@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import LikeIcon from './LikeIcon'
-import UnlikeIcon from './UnlikeIcon'
+import LikedIcon from './LikedIcon'
 import styles from './styles.module.css'
 
 const debounce = (fn, delay) => {
@@ -32,7 +32,7 @@ const LikeButton = ({ className, initialCount, onChange }) => {
 
   return (
     <button className={`${styles.like} ${className}`} onClick={handleClick}>
-      <div>{liked ? <UnlikeIcon /> : <LikeIcon />} {count}</div>
+      <div>{liked ? <LikedIcon /> : <LikeIcon />} {count}</div>
       <div className={styles.tooltip} role="tooltip">{liked ? 'Liked' : 'Like'}</div>
     </button>
   )
