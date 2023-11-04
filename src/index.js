@@ -1,6 +1,15 @@
-export { default as Avatar } from './Avatar/Avatar'
-export { default as Checkbox } from './Checkbox/Checkbox'
-export { default as Dropdown } from './Dropdown/Dropdown'
-export { default as Modal } from './Modal/Modal'
-export { default as Search } from './Search/Search'
-export { default as Sidebar } from './Sidebar/Sidebar'
+import Avatar from './Avatar/Avatar'
+import Checkbox from './Checkbox/Checkbox'
+import Dropdown from './Dropdown/Dropdown'
+import Modal from './Modal/Modal'
+import Search from './Search/Search'
+import Sidebar from './Sidebar/Sidebar'
+
+export {
+  Avatar,
+  Checkbox,
+  Dropdown,
+  Modal,
+  Search,
+  Sidebar
+}
