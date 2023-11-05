@@ -1,4 +1,3 @@
-
 const UncheckedIcon = ({ onClick }) => {
   return (
     <svg onClick={onClick} xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" role="img" aria-label="Checkbox Icon Unchecked">
@@ -7,5 +6,4 @@ const UncheckedIcon = ({ onClick }) => {
     </svg>
   )
 }
-
 export default UncheckedIcon
