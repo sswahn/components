@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { Context } from '../../Provider.js'
 import styles from './styles.module.css'
 
 const SideBar = ({ children, className }) => {
