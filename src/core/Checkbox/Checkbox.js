@@ -1,6 +1,6 @@
 import { useRef } from 'react'
-import CheckedIcon from './CheckedIcon'
-import UncheckedIcon from './UncheckedIcon'
+import CheckedIcon from './CheckedIcon.js'
+import UncheckedIcon from './UncheckedIcon.js'
 import styles from 'styles.module.css'
 
 const Checkbox = ({ label, checked, onChange }) => {
