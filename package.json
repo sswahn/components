@@ -1,6 +1,6 @@
 {
   "name": "@sswahn/components",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "license": "MIT",
   "description": "A collection of reusable React components.",
   "main": "src/index.js",
@@ -12,5 +12,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sswahn/components"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
   }
 }
