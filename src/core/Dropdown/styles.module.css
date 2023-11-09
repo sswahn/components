@@ -1,0 +1,8 @@
+
+.dropdown menu {
+  list-style-type: none;
+}
+
+.dropdown li {
+  cursor: pointer;
+}
