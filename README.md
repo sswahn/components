@@ -30,7 +30,6 @@ The Avatar component displays user avatars or profile images. Easily create an a
   image="/path/to/user-avatar.jpg" // Path to the user's avatar image
   username="JohnDoe"               // User's username or name
   onClick={handleClick}            // Optional click event handler
-  badge={true}                     // Display a pro badge (optional)
 />
 ```  
 
