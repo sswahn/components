@@ -62,7 +62,7 @@ const dropdownOptions = [
 ### Modal
 The Modal component allows you to create modal dialogs that can be opened and closed programmatically.  
 ```javascript
-<Modal className="custom-modal" open={isOpen} onClose={handleModalClose}>
+<Modal className="custom-modal" open={isOpen} onClose={handleCloseModal}>
   {/* Content for the modal */}
 </Modal>
 ```  
@@ -76,7 +76,7 @@ The Search component provides an input field for searching, and it allows you to
 ### Sidebar
 The Sidebar component helps you create flexible sidebars with an open and close functionality.  
 ```javascript
-<Sidebar className="custom-sidebar" open={isOpen}>
+<Sidebar className="custom-sidebar" open={isOpen} onClose={handleCloseSidebar}>
   {/* Sidebar content */}
 </Sidebar>
 ```  
