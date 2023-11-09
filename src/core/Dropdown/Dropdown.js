@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import styles from './styles.module.css'
 
 const Dropdown = ({ className, text, options }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -8,7 +9,7 @@ const Dropdown = ({ className, text, options }) => {
   }
 
   return (
-    <div className={`${className}`}>
+    <div className={`${styles.dropdown} ${className}`}>
       <button type="button" onClick={toggleDropdown} aria-label="dropdown button" aria-haspopup="true" aria-expanded={isOpen}>
         {text}
       </button>
