@@ -48,6 +48,11 @@ The Checkbox component allows you to create customizable checkboxes with labels.
 ### Dropdown
 The Dropdown component provides a simple way to create dropdown menus with various options.  
 ```javascript
+const dropdownOptions = [
+  {label: 'option one', onClick: handleOptionOne},
+  {label: 'option two', onClick: handleOptionTwo},
+  {label: 'option three', onClick: handleOptionThree}
+]
 <Dropdown
   className="custom-dropdown"
   text="Select an option"
