@@ -1,4 +1,4 @@
-# Components  
+# Components · [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/sswahn/components/blob/main/LICENSE) ![npm version](https://img.shields.io/npm/v/@sswahn/components)
 A collection of reusable React components.  
 
 ## Installation
@@ -76,6 +76,10 @@ The Sidebar component helps you create flexible sidebars with an open and close 
   {/* Sidebar content */}
 </Sidebar>
 ```  
+
+## Peer Dependencies
+Router requires React as a peer dependency. You should have React installed in your project with a version compatible with this library.  
+[React](https://reactjs.org/): ^18.2.0
 
 ## License
 Components is [MIT Licensed](https://github.com/sswahn/components/blob/main/LICENSE)
