@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const Dropdown = ({ text, options }) => {
+const Dropdown = ({ className, text, options }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleDropdown = () => {
@@ -8,16 +8,16 @@ const Dropdown = ({ text, options }) => {
   }
 
   return (
-    <div className="dropdown">
-      <button className="dropbtn" onClick={toggleDropdown}>
+    <div className={`${className}`}>
+      <button type="button" onClick={toggleDropdown} aria-label="dropdown button" aria-haspopup="true" aria-expanded={isOpen}>
         {text}
       </button>
       {isOpen && (
-        <div className="dropdown-content">
+        <menu>
           {options.map((option, index) => (
-            <button type="button" key={index} onClick={option.onClick}>
+            <li key={index} onClick={option.onClick} role="menuitem">
               {option.label}
-            </button>
+            </li>
           ))}
         </div>
       )}
