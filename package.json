@@ -1,6 +1,6 @@
 {
   "name": "@sswahn/components",
-  "version": "1.0.0-beta.20",
+  "version": "1.0.0-beta.21",
   "license": "MIT",
   "description": "A collection of reusable React components.",
   "main": "src/index.js",
