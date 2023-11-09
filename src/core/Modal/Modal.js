@@ -14,7 +14,7 @@ const Modal = ({ className, open, onClose, children }) => {
   }
 
   const clickToClose = event => {
-    if (!dialogRef.current.contains(event.target)) {
+    if (event.target === dialogRef.current) {
       closeModal()
     }
   }
