@@ -40,7 +40,7 @@ const Sidebar = ({ className, open, onClose, children }) => {
       <nav className={`${styles.sidebar} ${className} ${isOpen ? styles.open : styles.closed}`} ref={sidebarRef}>
         {children}
       </nav>
-      {isOpen && <div className={styles.overlay} onClick={closeSidebar} />}
+      {isOpen && <div className={`${styles.overlay} ${styles.open}`} onClick={closeSidebar} />}
     </>
   )
 }
