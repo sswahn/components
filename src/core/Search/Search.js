@@ -7,9 +7,7 @@ const Search = ({ className, onChange, placeholder }) => {
   const handleOnChange = (event) => {
     const newValue = event.target.value
     setSearchValue(newValue)
-    if (onChange) {
-      onChange(newValue)
-    }
+    onChange && onChange(newValue)
   }
   
   return (
