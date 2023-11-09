@@ -9,10 +9,8 @@ const Modal = ({ className, open, onClose, children }) => {
   }
   
   const closeModal = event => {
-    if (open === true) {
-      dialogRef.current.close()
-      onClose && onClose()
-    }
+    dialogRef.current.close()
+    onClose && onClose()
   }
 
   const clickToClose = event => {
