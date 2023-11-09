@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import styles from './styles.module.css'
 
-const Modal = ({ children, className, onClose }) => {
+const Modal = ({ className, onClose, children }) => {
   const [isOpen, setIsOpen] = useState(false)
   const dialogRef = useRef(null)
   
