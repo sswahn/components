@@ -1,34 +1,26 @@
 import { useState, useEffect, useRef } from 'react'
 
-const Modal = ({ className, onClose, children }) => {
-  const [isOpen, setIsOpen] = useState(false)
+const Modal = ({ className, open, onClose, children }) => {
   const dialogRef = useRef(null)
   
   const openModal = () => {
-    if (!isOpen) {
-      dialogRef.current.showModal()
-      setIsOpen(true)
-    }
+    dialogRef.current.showModal()
   }
   
   const closeModal = event => {
     if (event.target.tagName === 'DIALOG') {
-      setIsOpen(false)
       dialogRef.current.close()
       onClose && onClose()
     }
   }
   
-  useEffect(() => {
-    openModal()
-  }, [])
+  const toggleModal = () => {
+    open ? openModal() : closeModal()
+  }
   
   useEffect(() => {
-    document.addEventListener('mousedown', closeModal)
-    return () => {
-      document.removeEventListener('mousedown', closeModal)
-    }
-  }, [])
+    toggleModal()
+  }, [open])
   
   return (
     <dialog className={className} ref={dialogRef}>
