@@ -8,9 +8,13 @@ const Modal = ({ className, open, onClose, children }) => {
   }
   
   const closeModal = event => {
-    if (event.target.tagName === 'DIALOG') {
-      dialogRef.current.close()
-      onClose && onClose()
+    dialogRef.current.close()
+    onClose && onClose()
+  }
+
+  const clickToClose = event => {
+    if (!dialogRef.current.contains(event.target)) {
+      closeModal()
     }
   }
   
@@ -22,18 +26,17 @@ const Modal = ({ className, open, onClose, children }) => {
     toggleModal()
   }, [open])
 
-  /*
   useEffect(() => {
-    document.addEventListener('mousedown', closeModal)
+    document.addEventListener('mousedown', clickToClose)
     return () => {
-      document.removeEventListener('mousedown', closeModal)
+      document.removeEventListener('mousedown', clickToClose)
     }
   }, [])
-  */
+  
   
   return (
     <dialog className={className} ref={dialogRef}>
-      {children}
+      <div>{children}</div>
     </dialog>
   )
 }
