@@ -1,12 +1,22 @@
 /* Sidebar css */
 
 .sidebar {
-  background-color: var(--dark-background-color-secondary);
+  background-color: white;
   height: 100%;
   max-width: 500px;
   position: absolute;
   top: 0;
   transition: transform 0.3s ease-in-out, right 0.3s ease-in-out;
+  width: 100%;
+  z-index: 999;
+}
+
+.overlay {
+  background-color: transparent;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
 
