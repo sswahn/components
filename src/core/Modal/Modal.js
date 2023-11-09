@@ -32,7 +32,7 @@ const Modal = ({ className, onClose, children }) => {
   }, [])
   
   return (
-    <dialog className={`${styles.modal} ${className}`} ref={dialogRef}>
+    <dialog className={`${className}`} ref={dialogRef}>
       {children}
     </dialog>
   )
