@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react'
-import styles from './styles.module.css'
 
 const Modal = ({ className, onClose, children }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -32,7 +31,7 @@ const Modal = ({ className, onClose, children }) => {
   }, [])
   
   return (
-    <dialog className={`${className}`} ref={dialogRef}>
+    <dialog className={className} ref={dialogRef}>
       {children}
     </dialog>
   )
