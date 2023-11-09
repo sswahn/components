@@ -5,7 +5,7 @@ const Sidebar = ({ className, open, children }) => {
   const [isOpen, setIsOpen] = useState()
   const sidebarRef = useRef(null)
 
-  const toggleModal = () => {
+  const toggleSidebar = () => {
     open ? setIsOpen(true) : setIsOpen(false)
   }
 
@@ -16,7 +16,7 @@ const Sidebar = ({ className, open, children }) => {
   }
  
   useEffect(() => {
-    toggleModal()
+    toggleSidebar()
   }, [])
 
   useEffect(() => {
