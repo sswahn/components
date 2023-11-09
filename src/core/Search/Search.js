@@ -17,6 +17,7 @@ const Search = ({ className, onChange, placeholder }) => {
       value={searchValue}
       onChange={handleOnChange}
       placeholder={placeholder || ''}
+      role="searchbox"
     />
   )
 }
