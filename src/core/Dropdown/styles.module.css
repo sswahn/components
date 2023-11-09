@@ -6,6 +6,11 @@
 }
 
 .dropdown li {
+  border-top: 1px solid black;
   cursor: pointer;
   padding: 5px 10px;
+}
+
+.dropdown li:first-child {
+  border-top: 0;
 }
