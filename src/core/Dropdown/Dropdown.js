@@ -13,15 +13,13 @@ const Dropdown = ({ className, text, options }) => {
       <button type="button" onClick={toggleDropdown} aria-label="dropdown button" aria-haspopup="true" aria-expanded={isOpen}>
         {text}
       </button>
-      {isOpen && (
-        <menu>
-          {options.map((option, index) => (
-            <li key={index} onClick={option.onClick} role="menuitem">
-              {option.label}
-            </li>
-          ))}
-        </menu>
-      )}
+      <menu style={{display: isOpen ? 'block' : 'none'}} aria-hidden={!isOpen}>
+        {options.map((option, index) => (
+          <li key={index} onClick={option.onClick} role="menuitem">
+            {option.label}
+          </li>
+        ))}
+      </menu>
     </div>
   )
 }
