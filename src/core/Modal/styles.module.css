@@ -2,10 +2,7 @@
 
 .modal {
   align-items: center; 
-  background: white;
-  border: 0;
   display: flex; 
-  height: auto;
   justify-content: center; 
   overflow-y: auto;
   position: fixed;
