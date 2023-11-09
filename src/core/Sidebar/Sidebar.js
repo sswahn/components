@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from './styles.module.css'
 
-const SideBar = ({ children, className }) => {
+const Sidebar = ({ children, className }) => {
  const [isOpen, setIsOpen] = useState(false)
   
   const openSidebar = () => {
