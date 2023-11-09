@@ -80,7 +80,7 @@ The Sidebar component helps you create flexible sidebars with an open and close 
 ## Peer Dependencies
 Components requires React as a peer dependency. You should have React installed in your project with a version compatible with this library.  
 
-[React](https://reactjs.org/): ^18.2.0
+[React](https://reactjs.org/): ^18.2.0  
 
 ## License
 Components is [MIT Licensed](https://github.com/sswahn/components/blob/main/LICENSE)
