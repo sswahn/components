@@ -36,7 +36,7 @@ const Modal = ({ className, open, onClose, children }) => {
   
   return (
     <dialog className={className} ref={dialogRef}>
-      <div>{children}</div>
+      <div className={styles.content}>{children}</div>
     </dialog>
   )
 }
