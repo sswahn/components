@@ -19,7 +19,7 @@ const Dropdown = ({ className, text, options }) => {
               {option.label}
             </li>
           ))}
-        </div>
+        </menu>
       )}
     </div>
   )
