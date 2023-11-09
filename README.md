@@ -26,10 +26,10 @@ import {
 The Avatar component displays user avatars or profile images. Easily create an avatar element with support for custom user images and badges.
 ```javascript
 <Avatar
-  className="custom-avatar"        // Your class for custom styles (optional)
-  image="/path/to/user-avatar.jpg" // Path to the user's avatar image
-  username="JohnDoe"               // User's username or name
-  onClick={handleClick}            // Optional click event handler
+  className="custom-avatar"
+  image="/path/to/user-avatar.jpg"
+  username="JohnDoe"
+  onClick={handleClick}
 />
 ```  
 
