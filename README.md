@@ -62,7 +62,7 @@ const dropdownOptions = [
 ### Modal
 The Modal component allows you to create modal dialogs that can be opened and closed programmatically.  
 ```javascript
-<Modal className="custom-modal" onClose={handleModalClose}>
+<Modal className="custom-modal" open={isOpen} onClose={handleModalClose}>
   {/* Content for the modal */}
 </Modal>
 ```  
