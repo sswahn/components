@@ -1,29 +1,34 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import styles from './styles.module.css'
 
-const Sidebar = ({ children, className }) => {
- const [isOpen, setIsOpen] = useState(false)
-  
-  const openSidebar = () => {
-    if (!isOpen) {
-      setIsOpen(true)
+const Sidebar = ({ className, open, children }) => {
+  const [isOpen, setIsOpen] = useState()
+  const sidebarRef = useRef(null)
+
+  const toggleModal = () => {
+    open ? setIsOpen(true) : setIsOpen(false)
+  }
+
+  const clickToClose = event => {
+    if (!sidebarRef.current.contains(event.target)) {
+      closeModal()
     }
   }
-
-  const closeSidebar = () => {
-    setIsOpen(false)
-  }
+ 
+  useEffect(() => {
+    toggleModal()
+  }, [])
 
   useEffect(() => {
-    openSidebar()
+    document.addEventListener('mousedown', clickToClose)
     return () => {
-      closeSidebar()
+      document.removeEventListener('mousedown', clickToClose)
     }
   }, [])
   
   return (
     <>
-      <nav className={`${styles.sidebar} ${className} ${isOpen ? styles.open : styles.closed}`}>
+      <nav className={`${styles.sidebar} ${className} ${isOpen ? styles.open : styles.closed}`} ref={sidebarRef}>
         {/* make off click close functionality */}
         {children}
       </nav>
