@@ -29,7 +29,6 @@ const Sidebar = ({ className, open, children }) => {
   return (
     <>
       <nav className={`${styles.sidebar} ${className} ${isOpen ? styles.open : styles.closed}`} ref={sidebarRef}>
-        {/* make off click close functionality */}
         {children}
       </nav>
       {/* isOpen && <div className="overlay" onClick={closeSidebar} /> */} {/* Overlay for closing sidebar */}
