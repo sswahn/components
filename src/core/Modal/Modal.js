@@ -21,6 +21,15 @@ const Modal = ({ className, open, onClose, children }) => {
   useEffect(() => {
     toggleModal()
   }, [open])
+
+  /*
+  useEffect(() => {
+    document.addEventListener('mousedown', closeModal)
+    return () => {
+      document.removeEventListener('mousedown', closeModal)
+    }
+  }, [])
+  */
   
   return (
     <dialog className={className} ref={dialogRef}>
