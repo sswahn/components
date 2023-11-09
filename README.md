@@ -76,7 +76,7 @@ The Search component provides an input field for searching, and it allows you to
 ### Sidebar
 The Sidebar component helps you create flexible sidebars with an open and close functionality.  
 ```javascript
-<Sidebar className="custom-sidebar">
+<Sidebar className="custom-sidebar" open={isOpen}>
   {/* Sidebar content */}
 </Sidebar>
 ```  
