@@ -78,7 +78,8 @@ The Sidebar component helps you create flexible sidebars with an open and close 
 ```  
 
 ## Peer Dependencies
-Router requires React as a peer dependency. You should have React installed in your project with a version compatible with this library.  
+Components requires React as a peer dependency. You should have React installed in your project with a version compatible with this library.  
+
 [React](https://reactjs.org/): ^18.2.0
 
 ## License
