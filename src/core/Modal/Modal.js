@@ -16,7 +16,7 @@ const Modal = ({ className, onClose, children }) => {
     if (event.target.tagName === 'DIALOG') {
       setIsOpen(false)
       dialogRef.current.close()
-      onClose()
+      onClose && onClose()
     }
   }
   
