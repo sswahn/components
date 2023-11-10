@@ -3,7 +3,7 @@ import CheckedIcon from './CheckedIcon.js'
 import UncheckedIcon from './UncheckedIcon.js'
 import styles from './styles.module.css'
 
-const Checkbox = ({ label, checked, onChange }) => {
+const Checkbox = ({ className, label, checked, onChange }) => {
   const checkboxRef = useRef(null)
 
   const handleClick = event => {
@@ -11,7 +11,7 @@ const Checkbox = ({ label, checked, onChange }) => {
   }
   
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${className || ''}`}>
       <label className={styles.label} onClick={handleClick}>{label}</label>
       <input className={styles.checkbox} ref={checkboxRef} type="checkbox" checked={checked} onChange={onChange} aria-checked={checked} />
       {checked ? <CheckedIcon className={styles.icon} onClick={handleClick} /> : <UncheckedIcon className={styles.icon} onClick={handleClick} />}
