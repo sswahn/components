@@ -28,7 +28,7 @@ import {
 ```
 
 ### Checkbox
-The Checkbox component allows you to create customizable checkboxes with labels.  
+The `Checkbox` component allows you to create customizable checkboxes with labels.  
 ```javascript
 <Checkbox
   className="custom-checkbox"
@@ -39,7 +39,7 @@ The Checkbox component allows you to create customizable checkboxes with labels.
 ```  
 
 ### Dropdown
-The Dropdown component provides a simple way to create dropdown menus with various options.  
+The `Dropdown` component provides a simple way to create dropdown menus with various options.  
 ```javascript
 const dropdownOptions = [
   {label: 'option one', onClick: handleOptionOne},
@@ -54,7 +54,7 @@ const dropdownOptions = [
 ```   
 
 ### Modal
-The Modal component allows you to create modal dialogs that can be opened and closed programmatically.  
+The `Modal` component allows you to create modal dialogs that can be opened and closed programmatically.  
 ```javascript
 <Modal className="custom-modal" open={isOpen} onClose={handleCloseModal}>
   {/* Content for the modal */}
@@ -62,13 +62,13 @@ The Modal component allows you to create modal dialogs that can be opened and cl
 ```  
 
 ### Search
-The Search component provides an input field for searching, and it allows you to capture search input changes.  
+The `Search` component provides an input field for searching, and it allows you to capture search input changes.  
 ```javascript
 <Search className="custom-search" onChange={handleSearch} placeholder="Search..." />
 ```  
 
 ### Sidebar
-The Sidebar component helps you create flexible sidebars with an open and close functionality.  
+The `Sidebar` component helps you create flexible sidebars with an open and close functionality.  
 ```javascript
 <Sidebar className="custom-sidebar" open={isOpen} onClose={handleCloseSidebar}>
   {/* Sidebar content */}
