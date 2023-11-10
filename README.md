@@ -13,25 +13,13 @@ npm install @sswahn/components
 Import the components.
 ```javascript
 import {
-  Avatar,
   Checkbox,
   Dropdown,
   Modal,
   Search,
   Sidebar
 } from '@sswahn/components'
-```  
-
-### Avatar
-The Avatar component displays user avatars or profile images. Easily create an avatar element with support for custom user images and badges.
-```javascript
-<Avatar
-  className="custom-avatar"
-  image="/path/to/user-avatar.jpg"
-  username="JohnDoe"
-  onClick={handleClick}
-/>
-```  
+```
 
 ### Checkbox
 The Checkbox component allows you to create customizable checkboxes with labels.  
