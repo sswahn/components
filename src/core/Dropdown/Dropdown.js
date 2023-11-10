@@ -9,9 +9,9 @@ const Dropdown = ({ className, text, options }) => {
     setIsOpen(!isOpen)
   }
 
-    const clickToClose = event => {
-    if (event.target === menuRef.current) {
-      closeModal()
+  const clickToClose = event => {
+    if (!menuRef.current.contains(event.target)) {
+      setIsOpen(false)
     }
   }
 
