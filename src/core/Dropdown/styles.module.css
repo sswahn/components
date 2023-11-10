@@ -1,7 +1,6 @@
 
 .dropdown menu {
   border: 1px solid black;
-  border-radius: 5px;
   list-style-type: none;
   padding-left: 0;
   width: 150px;
@@ -15,14 +14,6 @@
 
 .dropdown li:first-child {
   border-top: 0;
-}
-
-.dropdown li:first-child:hover {
-  border-radius: 5px 5px 0 0;
-}
-
-.dropdown li:last-child:hover {
-  border-radius: 0 0 5px 5px;
 }
 
 .dropdown li:hover {
