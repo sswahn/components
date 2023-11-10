@@ -6,7 +6,7 @@ const Dropdown = ({ className, text, options }) => {
   const menuRef = useRef(null)
   
   const toggleDropdown = () => {
-    setIsOpen(!isOpen)
+    setIsOpen(prevState => !prevState)
   }
 
   const clickToClose = event => {
