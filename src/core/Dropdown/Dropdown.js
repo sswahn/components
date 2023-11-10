@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import styles from './styles.module.css'
 
 const Dropdown = ({ className, text, options }) => {
