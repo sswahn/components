@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import styles from './styles.module.css'
 
+// TODO: take prop side = left/right, and implement in code
 const Sidebar = ({ className, open, onClose, children }) => {
   const [isOpen, setIsOpen] = useState()
   const sidebarRef = useRef(null)
