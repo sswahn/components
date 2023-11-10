@@ -1,0 +1,10 @@
+
+.badge {
+  background-color: darkorange;
+  border-radius: 50%;
+  height: 8px;
+  left: 30px;
+  position: absolute;
+  top: 15px;
+  width: 8px;
+}
