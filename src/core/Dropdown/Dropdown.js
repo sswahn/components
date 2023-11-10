@@ -24,7 +24,7 @@ const Dropdown = ({ className, text, options }) => {
   }, [])
 
   return (
-    <div className={`${styles.dropdown} ${className}`}>
+    <div className={`${styles.dropdown} ${className || ''}`}>
       <button type="button" onClick={toggleDropdown} ref={dropdownRef} aria-label="dropdown button" aria-haspopup="true" aria-expanded={isOpen}>
         {text}
       </button>
