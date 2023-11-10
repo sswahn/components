@@ -2,7 +2,7 @@
   "name": "@sswahn/components",
   "version": "1.0.1",
   "license": "MIT",
-  "description": "A collection of reusable React components.",
+  "description": "A collection of customizable, reusable React components.",
   "main": "src/index.js",
   "type": "module",
   "keywords": [
