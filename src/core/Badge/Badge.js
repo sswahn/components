@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import styles from './styles.module.css'
 
-const Badge = ({ children }) => {
+const Badge = ({ count }) => {
 
   return (
-    <div className="badge" role="status" aria-label="notification indicator" aria-hidden="false">
-      {children}
+    <div className={styles.badge} role="status" aria-label="notification indicator" aria-hidden="false">
+      {count === 0 || count ? count : ''}
     </div>
   )
 }
