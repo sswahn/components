@@ -13,6 +13,7 @@ npm install @sswahn/components
 Import the components.
 ```javascript
 import {
+  Badge,
   Checkbox,
   Dropdown,
   Modal,
