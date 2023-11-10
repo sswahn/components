@@ -3,8 +3,7 @@ A collection of reusable React components.
 
 ## Installation
 
-To use these components in your React project, you can install this library via npm.
-
+Using npm.
 ```bash
 npm install @sswahn/components
 ```  
