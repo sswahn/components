@@ -1,5 +1,5 @@
 # Components · [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/sswahn/components/blob/main/LICENSE) ![npm version](https://img.shields.io/npm/v/@sswahn/components) ![Weekly Downloads](https://img.shields.io/npm/dw/@sswahn/components)
-A collection of reusable React components.  
+A collection of customizable, reusable React components.  
 
 ## Installation
 
