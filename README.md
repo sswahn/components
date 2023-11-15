@@ -82,8 +82,8 @@ Components requires React as a peer dependency. You should have React installed 
 
 ## Related
 - [@sswahn/social](https://www.npmjs.com/package/@sswahn/social): A collection of customizable, reusable social components for use with React.
-- [@sswahn/login](https://www.npmjs.com/package/@sswahn/login): A versatile authentication library of React components designed to streamline the user authentication processes.
 - [@sswahn/router](https://www.npmjs.com/package/@sswahn/router): A lightweight and flexible router for client-side routing in React.
+- [@sswahn/login](https://www.npmjs.com/package/@sswahn/login): A versatile authentication library of React components designed to streamline the user authentication processes.
 
 ## License
 Components is [MIT Licensed](https://github.com/sswahn/components/blob/main/LICENSE)
