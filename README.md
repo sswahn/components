@@ -7,7 +7,7 @@ A collection of customizable, reusable React components.
 - **Modal Component**: Utilize the Modal component to effortlessly create modal dialogs that can be programmatically opened and closed, with customizable appearances and onClose event handling.
 - **Search Component**: Implement search functionality with the Search component, offering an input field for capturing search input changes, along with customization options such as a custom class and a placeholder.
 - **Sidebar Component**: Create flexible sidebars with open and close functionality using the Sidebar component, featuring customization through a custom class, open status control, and an onClose event handler.
-
+- **Tabs Component**: The Tab Component is a flexible and accessible solution for implementing tabbed navigation. Easily organize content into tabs and switch between them with a clean and customizable interface.
 
 ## Installation
 Using npm.
@@ -76,6 +76,7 @@ The `Sidebar` component helps you create flexible sidebars with an open and clos
 ```
 
 ### Tabs
+The `Tabs` component allows you to easily organize content into tabs and switch between them.
 ```javascript
 const tabOptions = [
   { label: 'Tab 1', content: <p>Content for Tab 1</p> },
