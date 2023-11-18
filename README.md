@@ -91,7 +91,7 @@ const tabOptions = [
 ## Peer Dependencies
 Components requires React as a peer dependency. You should have React installed in your project with a version compatible with this library.  
 
-[React](https://reactjs.org/): ^18.2.0  
+- [React](https://reactjs.org/): ^18.2.0  
 
 ## Related
 - [@sswahn/social](https://www.npmjs.com/package/@sswahn/social): A collection of customizable, reusable social components for use with React.
