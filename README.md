@@ -73,7 +73,18 @@ The `Sidebar` component helps you create flexible sidebars with an open and clos
 <Sidebar className="custom-sidebar" open={isOpen} onClose={handleCloseSidebar}>
   {/* Sidebar content */}
 </Sidebar>
-```  
+```
+
+### Tabs
+```javascript
+const tabOptions = [
+  { label: 'Tab 1', content: <p>Content for Tab 1</p> },
+  { label: 'Tab 2', content: <p>Content for Tab 2</p> },
+  { label: 'Tab 3', content: <p>Content for Tab 3</p> }
+]
+
+<Tabs className="custom-tabs" options={options} />
+```
 
 ## Peer Dependencies
 Components requires React as a peer dependency. You should have React installed in your project with a version compatible with this library.  
