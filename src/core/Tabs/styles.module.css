@@ -1,0 +1,21 @@
+.tabs div:first-child {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tabs button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.tabs button.active {
+  background-color: #ddd;
+}
+
+.tabs div:last-child {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
