@@ -23,7 +23,8 @@ import {
   Dropdown,
   Modal,
   Search,
-  Sidebar
+  Sidebar,
+  Tabs
 } from '@sswahn/components'
 ```
 
