@@ -85,7 +85,7 @@ const tabOptions = [
   { label: 'Tab 3', content: <p>Content for Tab 3</p> }
 ]
 
-<Tabs className="custom-tabs" options={options} />
+<Tabs className="custom-tabs" options={tabOptions} />
 ```
 
 ## Peer Dependencies
