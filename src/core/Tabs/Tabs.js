@@ -21,7 +21,7 @@ const Tabs = ({ className, options }) => {
             role="tab" 
             aria-selected={active === index} 
             aria-controls={`tabpanel-${index}`}>
-            {tab.name}
+            {tab.label}
           </button>
         ))}
       </div>
