@@ -23,6 +23,8 @@ const Dropdown = ({ className, text, options }) => {
     }
   }, [])
 
+  //TODO: handle optional icons - an icon prop (icon={buttonIcon}), and icon property in options (option.icon)
+  
   return (
     <div className={`${styles.dropdown} ${className || ''}`}>
       <button type="button" onClick={toggleDropdown} ref={dropdownRef} aria-label="dropdown button" aria-haspopup="true" aria-expanded={isOpen}>
