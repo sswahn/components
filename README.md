@@ -81,9 +81,9 @@ The `Sidebar` component helps you create flexible sidebars with an open and clos
 The `Tabs` component allows you to easily organize content into tabs and switch between them.
 ```javascript
 const tabOptions = [
-  { label: 'Tab 1', content: <p>Content for Tab 1</p> },
-  { label: 'Tab 2', content: <p>Content for Tab 2</p> },
-  { label: 'Tab 3', content: <p>Content for Tab 3</p> }
+  {label: 'Tab 1', content: <p>Content for Tab 1</p>},
+  {label: 'Tab 2', content: <p>Content for Tab 2</p>},
+  {label: 'Tab 3', content: <p>Content for Tab 3</p>}
 ]
 
 <Tabs className="custom-tabs" options={tabOptions} />
