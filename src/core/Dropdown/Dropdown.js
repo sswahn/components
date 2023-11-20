@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
-import styles from './styles.module.css'
+import styles from './dropdown.module.css'
 
-const Dropdown = ({ className, icon: Icon, text, options }) => {
+const Dropdown = ({ className, icon: ButtonIcon, text, options }) => {
   const [isOpen, setIsOpen] = useState(false)
   const dropdownRef = useRef(null)
   const menuRef = useRef(null)
@@ -11,7 +11,7 @@ const Dropdown = ({ className, icon: Icon, text, options }) => {
   }
 
   const clickToClose = event => {
-    if (!menuRef.current.contains(event.target) && event.target !== dropdownRef.current) {
+    if (!menuRef.current.contains(event.target) && !dropdownRef.current.contains(event.target)) {
       setIsOpen(false)
     }
   }
@@ -22,21 +22,18 @@ const Dropdown = ({ className, icon: Icon, text, options }) => {
       document.removeEventListener('mousedown', clickToClose)
     }
   }, [])
-
-  //TODO: handle optional icons - an icon prop (icon={buttonIcon}), and icon property in options (option.icon)
-  // consider using conditional classes instead of inline styles on <menu>
   
   return (
     <div className={`${styles.dropdown} ${className || ''}`}>
       <button type="button" onClick={toggleDropdown} ref={dropdownRef} aria-label="dropdown button" aria-haspopup="true" aria-expanded={isOpen}>
-        {Icon && <div><Icon /></div>} 
-        {text && <div>{text}</div>}
+        {ButtonIcon && <div className={styles.icon}><ButtonIcon /></div>} 
+        {<div>{text}</div>}
       </button>
-      <menu ref={menuRef} style={{display: isOpen ? 'block' : 'none'}} aria-hidden={!isOpen}>
-        {options.map((option, index) => (
-          <li key={index} onClick={option.onClick} role="menuitem">
-            {option.icon && <div><option.icon /></div>} 
-            <div>{option.label}</div>
+      <menu className={isOpen ? styles.open : styles.closed} ref={menuRef} aria-hidden={!isOpen}>
+        {options.map(({ icon: Icon, label, onClick }, index) => (
+          <li key={index} onClick={onClick} role="menuitem">
+            {Icon && <div className={styles.icon}><Icon /></div>} 
+            <div>{label}</div>
           </li>
         ))}
       </menu>
