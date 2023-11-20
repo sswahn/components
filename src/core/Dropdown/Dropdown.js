@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import styles from './dropdown.module.css'
+import styles from './styles.module.css'
 
 const Dropdown = ({ className, icon: ButtonIcon, text, options }) => {
   const [isOpen, setIsOpen] = useState(false)
