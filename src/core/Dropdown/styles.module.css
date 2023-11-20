@@ -1,6 +1,7 @@
 /* Dropdown css */
 
 .dropdown button {
+  cursor: pointer;
   display: flex;
 }
 
