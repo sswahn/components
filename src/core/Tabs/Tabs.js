@@ -15,7 +15,7 @@ const Tabs = ({ className, options }) => {
           <button 
             key={index} 
             id={`tab-${index}`}
-            className={active === index ? 'active' : ''} 
+            className={active === index ? styles.active : ''} 
             onClick={() => handleTabClick(index)} 
             type="button" 
             role="tab" 
