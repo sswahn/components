@@ -3,7 +3,7 @@ A collection of customizable, reusable React components.
 
 ## Features
 - **Checkbox Component**: Create customizable checkboxes with labels using the Checkbox component, featuring options for custom classes, checked status, and change event handling.
-- **Dropdown Component**: Easily generate dropdown menus with various options using the Dropdown component, providing customization through a custom class and a list of options with labels and associated click handlers.
+- **Dropdown Component**: Easily generate dropdown menus with various options using the Dropdown component, providing customization through a custom class and a list of options with labels and associated click handlers, and support for option icons.
 - **Modal Component**: Utilize the Modal component to effortlessly create modal dialogs that can be programmatically opened and closed, with customizable appearances and onClose event handling.
 - **Search Component**: Implement search functionality with the Search component, offering an input field for capturing search input changes, along with customization options such as a custom class and a placeholder.
 - **Sidebar Component**: Create flexible sidebars with open and close functionality using the Sidebar component, featuring customization through a custom class, open status control, and an onClose event handler.
