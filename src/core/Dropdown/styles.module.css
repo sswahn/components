@@ -1,4 +1,12 @@
 
+.dropdown button {
+  display: flex;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
 .dropdown menu {
   border: 1px solid black;
   list-style-type: none;
@@ -9,6 +17,7 @@
 .dropdown li {
   border-top: 1px solid black;
   cursor: pointer;
+  display: flex;
   padding: 5px 10px;
 }
 
