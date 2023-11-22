@@ -13,20 +13,27 @@
 }
 
 .overlay {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
-  left: 0;
-  position: absolute;
+  right: 0;
+  position: fixed;
   top: 0;
   width: 100%;
-}
-/* opacity: 0; 
-  transition: opacity 0.3s ease-in-out;
+  z-index: 998;
+  opacity: 0;
+  max-width: 0; /* Set initial max-width to 0 */
+  transition: opacity 0.3s, max-width 0s 0.3s; /* Add delay to max-width transition on close */
 }
 
-.overlay.open {
-  opacity: 0.5;
-}*/
+.openOverlay {
+  opacity: 1;
+  max-width: 100%; /* Set max-width to 100% on open */
+  transition: opacity 0.3s;
+}
+
+.closedOverlay {
+  opacity: 0;
+}
 
 .open {
   right: 0;
