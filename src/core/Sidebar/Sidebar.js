@@ -38,10 +38,10 @@ const Sidebar = ({ className, open, onClose, children }) => {
   
   return (
     <>
-      <nav className={`${styles.sidebar} ${className || ''} ${isOpen ? styles.open : styles.closed}`} ref={sidebarRef} aria-label="collapsible sidebar" aria-hidden={!isOpen}>
+      <nav className={`${styles.sidebar} ${className || ''} ${isOpen ? styles.open : styles.closed}`} ref={sidebarRef} aria-label="sidebar" aria-hidden={!isOpen}>
         {children}
       </nav>
-      <div className={`${styles.overlay} ${isOpen ? styles.openOverlay : styles.closeOverlay}`} onClick={closeSidebar}></div>
+      <div className={`${styles.overlay} ${isOpen ? styles.openOverlay : styles.closeOverlay}`} onClick={closeSidebar} aria-label="sidebar overlay" aria-hidden={!isOpen}></div>
     </>
   )
 }
