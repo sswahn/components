@@ -40,7 +40,7 @@
   transform: translateX(0);
 }
 
-.closed {
+.close {
   right: -500px;
   transform: translateX(0);
 }
