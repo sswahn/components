@@ -41,7 +41,7 @@ const Sidebar = ({ className, open, onClose, children }) => {
       <nav className={`${styles.sidebar} ${className || ''} ${isOpen ? styles.open : styles.closed}`} ref={sidebarRef} aria-label="collapsible sidebar" aria-hidden={!isOpen}>
         {children}
       </nav>
-      {/* isOpen && <div className={`${styles.overlay}`} onClick={closeSidebar} /> */}
+      <div className={`${styles.overlay} ${isOpen ? styles.openOverlay : styles.closeOverlay}`} onClick={closeSidebar}></div>
     </>
   )
 }
