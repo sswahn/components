@@ -13,7 +13,7 @@ const Search = ({ className, onChange, placeholder }) => {
   return (
     <input 
       className={`${styles.search} ${className || ''}`} 
-      type="text"
+      type="search"
       value={searchValue}
       onChange={handleOnChange}
       placeholder={placeholder || ''}
