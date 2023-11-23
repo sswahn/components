@@ -25,13 +25,13 @@ const Tabs = ({ className, options }) => {
           </button>
         ))}
       </div>
-      <div 
+      <section 
         id={`tabpanel-${active}`}
         className={styles.content} 
         role="tabpanel"
         aria-labelledby={`tab-${active}`}>
         {options[active].content}
-      </div>
+      </section>
     </div>
   )
 }
