@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from './styles.module.css'
 
-const Search = ({ className, onChange, placeholder }) => {
+const Search = ({ className, placeholder, onChange }) => {
   const [searchValue, setSearchValue] = useState('')
 
   const handleOnChange = (event) => {
