@@ -10,7 +10,7 @@ const Tabs = ({ className, options }) => {
 
   return (
     <div className={`${styles.tabs} ${className || ''}`}>
-      <div role="tablist" aria-label="tab navigation">
+      <nav role="tablist" aria-label="tab navigation">
         {options.map((tab, index) => (
           <button 
             key={index} 
@@ -24,7 +24,7 @@ const Tabs = ({ className, options }) => {
             {tab.label}
           </button>
         ))}
-      </div>
+      </nav>
       <section 
         id={`tabpanel-${active}`}
         className={styles.content} 
