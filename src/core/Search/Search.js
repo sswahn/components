@@ -11,14 +11,18 @@ const Search = ({ className, onChange, placeholder }) => {
   }
   
   return (
-    <input 
-      className={`${styles.search} ${className || ''}`} 
-      type="text"
-      value={searchValue}
-      onChange={handleOnChange}
-      placeholder={placeholder || ''}
-      role="searchbox"
-    />
+    <search>
+      <form>
+        <input 
+          className={`${styles.search} ${className || ''}`} 
+          type="text"
+          value={searchValue}
+          onChange={handleOnChange}
+          placeholder={placeholder || ''}
+          role="searchbox"
+        />
+      </form>
+    </search>
   )
 }
 
