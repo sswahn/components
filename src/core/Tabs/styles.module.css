@@ -13,11 +13,6 @@
   background-color: #f9f9f9;
 }
 
-.tabs button.active {
-  background-color: #eee;
-  border: 1px solid #ccc;
-}
-
 .tabs section {
   padding: 10px;
   border: 1px solid #ddd;
