@@ -10,7 +10,7 @@ const Tabs = ({ className, options }) => {
 
   return (
     <div className={`${styles.tabs} ${className || ''}`}>
-      <nav role="tablist" aria-label="tab navigation">
+      <nav role="tablist">
         {options.map((tab, index) => (
           <button 
             key={index} 
